@@ -1,0 +1,351 @@
+@import './fonts.scss';
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: var(--font-black);
+  font-size: 0.625vw;
+}
+
+:root {
+  --font-black: #312b22;
+  --font-light: #e3e2df;
+}
+
+// clear styles
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+// elements
+
+body {
+  background-color: #fefdf9;
+}
+
+header {
+  z-index: 30;
+
+  padding: 3.243rem 20rem 3.243rem 20rem;
+  border-bottom: 1px solid #302a211a;
+  font-family: 'Futura';
+  font-size: 1.8rem;
+  position: fixed;
+
+  backdrop-filter: blur(15px);
+
+  width: 100%;
+
+  gap: 2.2rem;
+
+  @include flex-center;
+
+  img {
+    width: 2.297rem;
+  }
+}
+
+main {
+  position: relative;
+
+  z-index: 20;
+
+  .hero-container {
+    @include flex-center();
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 4rem 0;
+    padding-top: 14.9rem;
+
+    img {
+      width: 11.428rem;
+    }
+
+    h1 {
+      font-family: 'FuturaAlt';
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      text-align: center;
+      line-height: 1;
+      font-size: 5.5rem;
+
+      max-width: 65.63rem;
+    }
+
+    h2 {
+      font-family: 'Adobe Caslon Pro';
+      text-align: center;
+      font-weight: 400;
+      font-size: 2.4rem;
+      max-width: 49rem;
+    }
+  }
+
+  section.projects-container {
+    @include flex-center();
+    flex-direction: column;
+    padding: 2.8rem 0 12rem 0;
+
+    .title-container {
+      // display: block;
+      border-bottom: 1px solid var(--font-light);
+      font-weight: 500;
+      width: calc(100vw - 72rem);
+      margin-bottom: 4.5rem;
+      // max-width: 90%;
+
+      h2 {
+        color: var(--font-light);
+        font-family: 'Tiempos Headline';
+
+        font-family: 'Tiempos Headline';
+        font-weight: 500;
+        font-size: 3rem;
+        letter-spacing: -0.05em;
+        // align-self: flex-start;
+        // margin-inline: 35.7rem;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .projects-list {
+      font-family: 'Tiempos Headline';
+      letter-spacing: -0.7px;
+      display: flex;
+      flex-direction: column;
+      gap: 15rem;
+
+      .project-container {
+        @include flex-center();
+        flex-direction: column;
+
+        img {
+          width: 87.85rem;
+          max-width: 90vw;
+          margin-bottom: 3rem;
+        }
+
+        h2 {
+          font-size: 3.1rem;
+          // font-family: tiempos;
+          font-weight: 600;
+          width: 55.529rem;
+          max-width: 90vw;
+          margin-bottom: 10px;
+        }
+
+        ul {
+          width: 55.529rem;
+          max-width: 90vw;
+          display: flex;
+          gap: 1rem;
+          margin-top: 1rem;
+
+          li {
+            // padding: 0.15em 0.8rem;
+            padding: 0.15rem 0.8rem;
+            border: 1px solid var(--font-black);
+            font-size: 1.90108rem;
+
+            &:nth-of-type(1),
+            &:nth-of-type(3) {
+              border-radius: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  text-transform: uppercase;
+  z-index: 10;
+  background: #0b0c0d;
+
+  @include flex-center();
+
+  .footer-content {
+    position: fixed;
+    bottom: 0;
+
+    width: 68.6rem;
+    max-width: 90vw;
+    padding: 9.1rem 0 5.7rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  * {
+    color: white;
+  }
+
+  .footer-links {
+    font-family: 'Futura';
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: -0.05px;
+    font-size: 2rem;
+
+    a {
+      position: relative;
+      padding: 0.3rem 0;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.3rem;
+        background: white;
+
+        transform-origin: 100%;
+        transform: scaleX(0%);
+
+        transition: transform 0.3s;
+      }
+
+      &:hover::after {
+        transform-origin: 0%;
+        transform: scaleX(100%);
+      }
+    }
+
+    .links-left {
+      display: flex;
+      gap: 10px;
+    }
+
+    .links-right {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .email-container {
+    @include flex-center();
+    cursor: pointer;
+
+    margin: 14rem 0 18rem;
+
+    h1 {
+      font-family: 'FuturaAlt';
+      font-size: 8.7rem;
+      line-height: 1;
+    }
+
+    button {
+      @include flex-center();
+
+      font-family: 'SFProRounded';
+      background: transparent;
+      outline: none;
+      border: 0.2rem solid white;
+      border-radius: 50px;
+      padding: 1.068rem 2rem 1.068rem 1rem;
+      transform: translateY(4rem);
+
+      img {
+        width: 2.668rem;
+      }
+
+      span {
+        font-size: 2.4rem;
+      }
+    }
+
+    user-select: none;
+    transition: opacity 0.3s;
+    will-change: opacity;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .footer {
+    font-family: 'SFProRounded';
+    letter-spacing: -0.17px;
+    font-size: 1.6rem;
+    font-weight: 200;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 0.1rem solid white;
+    padding-top: 20px;
+  }
+
+  .footer-spacer {
+    height: 73rem;
+  }
+}
+
+section.about {
+  position: relative;
+  z-index: 20;
+  padding-top: 16.254rem;
+
+  @include flex-center();
+  flex-direction: column;
+
+  img {
+    width: calc(100vw - 13.908rem);
+  }
+
+  h1 {
+    font-family: 'FuturaAlt';
+    font-size: 5.3rem;
+    width: 68rem;
+    text-align: center;
+    line-height: 1;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-family: 'BDScript', sans-serif;
+    font-style: italic;
+    font-size: 6.6rem;
+    margin-bottom: 5rem;
+  }
+
+  .about-text {
+    width: 68.3rem;
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: 'EB Garamond';
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    margin-bottom: 13rem;
+  }
+}

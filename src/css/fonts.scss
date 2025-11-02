@@ -1,0 +1,167 @@
+/*# sourceMappingURL=/index.css.map */
+@font-face {
+  font-family: 'BDScript';
+  src: url('../fonts/BDScript-Bold.woff2') format('woff2'), url('../fonts/BDScript-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('../fonts/subset-EBGaramond-SemiBold.woff2') format('woff2'),
+    url('../fonts/subset-EBGaramond-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: local('EB Garamond Regular'), local('EBGaramond-Regular'),
+    url('../fonts/subset-EBGaramond-Regular.woff2') format('woff2'),
+    url('../fonts/subset-EBGaramond-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('../fonts/subset-EBGaramond-Italic.woff2') format('woff2'),
+    url('../fonts/subset-EBGaramond-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('../fonts/subset-TiemposHeadline-Regular.woff2') format('woff2');
+    // url('../fonts/subset-TiemposHeadline-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('../fonts/subset-TiemposHeadline-Semibold.woff2') format('woff2'),
+    url('../fonts/subset-TiemposHeadline-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('../fonts/subset-TiemposHeadline-RegularItalic.woff2') format('woff2'),
+    url('../fonts/subset-TiemposHeadline-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('../fonts/subset-TiemposHeadline-SemiboldItalic.woff2') format('woff2'),
+    url('../fonts/subset-TiemposHeadline-SemiboldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: local('TiemposHeadline-Medium'), url('../fonts/TiemposHeadline-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: local('TiemposHeadline-Black'), url('../fonts/subset-TiemposHeadline-Black.woff2') format('woff2'),
+    url('../fonts/subset-TiemposHeadline-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../fonts/Futura-Medium.woff2') format('woff2'), url('../fonts/Futura-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../fonts/Futura-Bold.woff2') format('woff2'), url('../fonts/Futura-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FuturaAlt';
+  /* src: url("../fonts/Futura-Bold.woff2") format("woff2"),
+    url("../fonts/Futura-Bold.woff") format("woff"); */
+  /* src: url("../fonts/Futura Bold font.ttf"); */
+  src: url('../fonts/FuturaLT-CondensedExtraBold.woff2') format('woff2'),
+    url('../fonts/FuturaLT-CondensedExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro';
+  src: local('Adobe Caslon Pro Regular'), local('ACaslonPro-Regular'),
+    url('../fonts/subset-ACaslonPro-Regular.woff2') format('woff2'),
+    url('../fonts/subset-ACaslonPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProRounded';
+  src: local('SFProRounded Bold'), local('SFProRounded-Bold'),
+    url('../fonts/subset-SFRounded-Bold.woff2') format('woff2'),
+    url('../fonts/subset-SFRounded-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProRounded';
+  src: local('SFProRounded Medium'), local('SFProRounded-Medium'),
+    url('../fonts/subset-SFRounded-Medium.woff2') format('woff2'),
+    url('../fonts/subset-SFRounded-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProRounded';
+  src: local('SFProRounded Semibold'), local('SFProRounded-Semibold'),
+    url('../fonts/subset-SFRounded-Semibold.woff2') format('woff2'),
+    url('../fonts/subset-SFRounded-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProRounded';
+  src: local('SFProRounded Ultralight'), local('SFProRounded-Ultralight'),
+    url('../fonts/subset-SFRounded-Ultralight.woff2') format('woff2'),
+    url('../fonts/subset-SFRounded-Ultralight.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}

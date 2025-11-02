@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import copy from '../img/copy.svg';
 
 const Footer = () => {
   return (
@@ -21,7 +22,7 @@ const Footer = () => {
         <div className="email-container">
           <h1 className="email">lotanidi @gmail.com</h1>
           <button className="copy">
-            <img src="/img/copy.svg" alt="copy" />
+            <img src={copy} alt="copy" />
             <span>Copy</span>
           </button>
         </div>

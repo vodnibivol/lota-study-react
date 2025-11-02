@@ -1,7 +1,9 @@
+import tennis from '../img/about.png';
+
 const About = () => {
   return (
     <section className="about">
-      <img src="/img/about.png" alt="lota playing tennis" />
+      <img src={tennis} alt="lota playing tennis" />
       <h1>HERE TO FINISH, NOT HERE TO WIN. SUCCESS IS A DISTRACTION.</h1>
       <h3>ltanidi</h3>
       <div className="about-text">

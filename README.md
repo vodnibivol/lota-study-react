@@ -1,7 +1,5 @@
 # Lota Study
 
-I tried to recreate this sleek website that I found.
-
-Demo: [here](https://www.vodnibivol.org/lota-study-react/).
+I tried to recreate Lotachi Anidi's design-awarded personal portfolio for practice.
 
 Design by [Lotachi Anidi](https://www.lottabydesign.xyz/).
